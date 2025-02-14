@@ -1,6 +1,3 @@
-
----
-
 ### Cores Aleatórias RGB:
 
 ![ScreenToGif](./color.gif)
@@ -34,4 +31,3 @@ Um projeto simples que gera uma cor aleatória no formato RGB e a exibe na tela.
 3. A cor é exibida em um quadrado na tela, e o código RGB é mostrado abaixo.
 4. Ao clicar no botão **"Gerar Cor"**, uma nova cor aleatória é gerada e exibida.
 
----
