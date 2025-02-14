@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151320;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.display-container {
+  padding: 0.5em;
+  width: 37.5rem;
+  height: 31.25rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #fffafa;
+  border-radius: 4px;
+  color: #fffafa;
+}
+
+.display-color {
+  background-color: rgb(31, 110, 46);
+  height: 70%;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 5%;
+  align-items: center;
+  color: #fffafa;
+  background-color: #151320;
+  height: 30%;
+  padding: 0.5em;
+}
+
+.colorText {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 100%;
+  height: 2rem;
+}
+
+.copy {
+  color: #00ff00;
+}
+
+.inputColor {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: #fffafa 1px solid;
+  border-radius: 4px;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: center;
+}
+
+#randomBtn {
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 1em;
+  background-color: #151320;
+  color: #fffafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 1em "Century Gothic";
+  text-transform: uppercase;
+  user-select: none;
+}
+
+#randomBtn::before,
+#randomBtn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  background: linear-gradient(
+    45deg,
+    #ffff00,
+    #00ff00,
+    #0099ff,
+    #001aff,
+    #a200ff,
+    #ff0055,
+    #ff0000,
+    #ffff00,
+    #00ff00,
+    #0099ff,
+    #001aff,
+    #a200ff
+  );
+  background-size: 300%;
+  border-radius: 4px;
+  animation: animateBorder 8s linear alternate infinite;
+}
+
+@keyframes animateBorder {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 300%;
+  }
+}
+
+#randomBtn::after {
+  filter: blur(30px);
+}
