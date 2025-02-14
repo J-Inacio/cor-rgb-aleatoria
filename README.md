@@ -3,7 +3,7 @@
 
 ### Cores Aleatórias RGB:
 
-[ScreenToGif](./color.gif)
+![ScreenToGif](./color.gif)
 
 ---
 
